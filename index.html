@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo-list</title>
+    <link href="styles.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/aa9bfc06c7.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="container">
+      <header id="header">
+        <h1>To-do list</h1>
+        <input type="text" id="new-task" placeholder="Type task..." />
+        <span><button id="add-btn" onclick="addTask()">Add task</button></span>
+      </header>
+
+      <ul id="my-list">
+        <!-- <li>
+          <p>buy orange</p>
+          <span><button class="remove" onclick="checked()">Done</button></span>
+        </li>
+        <li>
+          <p>make it cute</p>
+          <span><button class="remove" onclick="checked()">Done</button></span>
+        </li>
+        <li>
+          <p>be creative</p>
+          <span><button class="remove" onclick="checked()">Done</button></span>
+        </li>
+        <li class="checked">
+          <p>check your beans</p>
+          <span><button class="remove" onclick="checked()">Done</button></span>
+        </li> -->
+      </ul>
+
+      <p id="joke">
+        Open this book to see my other projects <i class="far fa-laugh-beam"></i>
+      </p>
+    </div>
+
+    <script src="javascript.js"></script>
+  </body>
+</html>

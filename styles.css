@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(90deg, #e2b687,#413426);
+  position: relative;
+  top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  height: auto;
+  background-color: #252629;
+  padding: 40px 5px;
+  border-radius: 20px 0 0 20px;
+  box-shadow: 5px 5px 8px 13px rgba(0,0,0,0.6);
+  position: relative;
+}
+
+#joke{
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    color: rgb(134, 133, 133);
+    font-style: italic;
+    margin-top: 10px;
+}
+
+
+#header {
+    margin-bottom: 40px;
+    color: grey;
+}
+#header h1 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#new-task {
+  width: 300px;
+  height: 35px;
+  border-radius: 30px;
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 8px;
+  outline: none;
+}
+
+#new-task:focus {
+  border: 2px solid rgb(201, 70, 22);
+}
+
+#add-btn {
+  color: black;
+  background-color: rgb(201, 70, 22);
+  width: 70px;
+  height: 33px;
+  border: none;
+  border-radius: 30px;
+}
+
+#add-btn:hover {
+    background-color: rgb(160, 60, 23);
+    cursor: pointer;
+}
+
+#add-btn:active {
+    background-color: rgb(77, 25, 7);
+    cursor: pointer;
+}
+
+ul li {
+  list-style-type: none;
+  margin-top: 4px;
+}
+
+ul li p {
+  font-size: 18px;
+  display: inline-block;
+  width: 230px;
+  height: 35px;
+  border-radius: 30px;
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 7px 14px;
+  outline: none;
+}
+
+ul li .remove {
+  color: black;
+  background-color: rgb(241, 206, 206);
+  width: 60px;
+  height: 33px;
+  border: none;
+  border-radius: 30px;
+}
+
+.checked::before {
+  content: "\2713";
+  display: inline-block;
+  font-size: 22px;
+  color: rgb(201, 70, 22);
+  padding: 0 2px;
+  margin: 0 -4px;
+}
+.checked .remove {
+  display: none;
+}
+
+.checked p {
+  color: rgb(82, 80, 80);
+  width: 270px;
+}
+
+.delete {
+  display: none;
+}
