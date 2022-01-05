@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta http-equiv="refresh" content="3"> -->
     <title>Todo-list</title>
     <link href="styles.css" rel="stylesheet" />
     <script
@@ -11,7 +12,7 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
+  <body id="body">
     <div id="container">
       <header id="header">
         <h1>To-do list</h1>
@@ -20,27 +21,39 @@
       </header>
 
       <ul id="my-list">
-        <!-- <li>
+        <!-- <li class="list-item">
           <p>buy orange</p>
-          <span><button class="remove" onclick="checked()">Done</button></span>
+          <span>
+            <button class="done" onclick="checked(this)">Done</button>
+            <button class="delete-item" onclick="deleteItem(this)">X</button>
+          </span>
         </li>
-        <li>
+        <li class="list-item">
           <p>make it cute</p>
-          <span><button class="remove" onclick="checked()">Done</button></span>
+          <span>
+            <button class="done" onclick="checked(this)">Done</button>
+            <button class="delete-item" onclick="deleteItem(this)">X</button>
+          </span>
         </li>
-        <li>
+        <li class="list-item">
           <p>be creative</p>
-          <span><button class="remove" onclick="checked()">Done</button></span>
+          <span>
+            <button class="done" onclick="checked(this)">Done</button>
+            <button class="delete-item" onclick="deleteItem(this)">X</button>
+          </span>
         </li>
-        <li class="checked">
+        <li class="checked list-item">
           <p>check your beans</p>
-          <span><button class="remove" onclick="checked()">Done</button></span>
+          <span>
+            <button class="done" onclick="checked(this)">Done</button>
+            <button class="delete-item" onclick="deleteItem(this)">X</button>
+          </span>
         </li> -->
       </ul>
 
-      <p id="joke">
-        Open this book to see my other projects <i class="far fa-laugh-beam"></i>
-      </p>
+      <p id="reminder">
+        If you don't use me my friends will mock me... <i class="fas fa-sad-cry"></i>
+      </p> 
     </div>
 
     <script src="javascript.js"></script>

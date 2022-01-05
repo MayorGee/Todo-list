@@ -5,7 +5,7 @@
 }
 
 body {
-  background: linear-gradient(90deg, #e2b687,#413426);
+  background: linear-gradient(90deg, #e2b687, #413426);
   position: relative;
   top: 50px;
   display: flex;
@@ -18,27 +18,17 @@ body {
   flex-direction: column;
   align-items: center;
   width: 500px;
-  height: auto;
+  min-height: 200px;
   background-color: #252629;
   padding: 40px 5px;
-  border-radius: 20px 0 0 20px;
-  box-shadow: 5px 5px 8px 13px rgba(0,0,0,0.6);
+  border-radius: 20px 0 20px 0;
+  box-shadow: 5px 5px 8px 13px rgba(0, 0, 0, 0.6);
   position: relative;
 }
 
-#joke{
-    position: absolute;
-    bottom: 2px;
-    right: 2px;
-    color: rgb(134, 133, 133);
-    font-style: italic;
-    margin-top: 10px;
-}
-
-
 #header {
-    margin-bottom: 40px;
-    color: grey;
+  margin-bottom: 40px;
+  color: grey;
 }
 #header h1 {
   text-align: center;
@@ -70,13 +60,13 @@ body {
 }
 
 #add-btn:hover {
-    background-color: rgb(160, 60, 23);
-    cursor: pointer;
+  background-color: rgb(160, 60, 23);
+  cursor: pointer;
 }
 
 #add-btn:active {
-    background-color: rgb(77, 25, 7);
-    cursor: pointer;
+  background-color: rgb(77, 25, 7);
+  cursor: pointer;
 }
 
 ul li {
@@ -97,25 +87,49 @@ ul li p {
   outline: none;
 }
 
-ul li .remove {
+ul li .done {
   color: black;
-  background-color: rgb(241, 206, 206);
+  background-color: #e2b687;
   width: 60px;
   height: 33px;
   border: none;
   border-radius: 30px;
 }
 
+.done:hover {
+  cursor: pointer;
+  background-color: #a18362;
+}
+
+ul li .delete-item {
+  color: black;
+  border: none;
+  height: 25px;
+  width: 25px;
+  background: red;
+  border-radius: 50%;
+  display: none;
+}
+
+.delete-item:hover {
+  background-color: rgb(131, 14, 14);
+  cursor: pointer;
+}
+
 .checked::before {
   content: "\2713";
   display: inline-block;
   font-size: 22px;
-  color: rgb(201, 70, 22);
+  color: rgb(151, 230, 34);
   padding: 0 2px;
   margin: 0 -4px;
 }
-.checked .remove {
+.checked .done {
   display: none;
+}
+
+.checked .delete-item {
+  display: inline;
 }
 
 .checked p {
@@ -125,4 +139,36 @@ ul li .remove {
 
 .delete {
   display: none;
+}
+
+#reminder {
+  position: absolute;
+  bottom: 25px;
+  right: 20%;
+  color: rgb(116, 113, 113);
+  font-style: italic;
+  margin-top: 10px;
+}
+
+#reminder i {
+  color: rgb(201, 70, 22);
+  font-size: 30px;
+  margin-left: 3px;
+  animation: cry 2s infinite;
+}
+
+@keyframes cry {
+  0% {
+    transform: skewX(0deg);
+  }
+  25% {
+    transform: skewX(-15deg);
+  }
+
+  75% {
+    transform: skewX(15deg);
+  }
+  100% {
+    transform: skewX(0deg);
+  }
 }
